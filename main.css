@@ -6,19 +6,18 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: hsl(212, 45%, 89%);
-    gap: 1em;
+    font-family: 'Outfit', sans-serif;
 }
 
-.modal {
+main {
     background-color: hsl(0, 0%, 100%);
-    max-width: 18em;
+    max-width: 20em;
     padding: 1em;
     border-radius: 1em;
     display: flex;
@@ -26,30 +25,30 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 1em;
 }
 
-.modal > img {
-    width: 100%;
+main > img {
+    max-width: 100%;
     border-radius: 0.5em;
 }
 
-.modal > div {
+main > div {
+    width: 95%;
     display: flex;
     flex-direction: column;
-    gap: 0.8em;
-    padding: 1em 0;
-    width: 95%;
+    align-items: center;
+    gap: 1em;
 }
 
-.modal > div > h2, p {
-    font-family: 'Outfit', sans-serif;
-}
-
-.modal > div > h2 {
+main > div > h1 {
+    font-size: 22px;
     color: hsl(218, 44%, 22%);
 }
 
-.modal > div > p {
+main > div > p {
+    width: 90%;
     font-size: 15px;
     color: hsl(220, 15%, 55%);
 }
+
